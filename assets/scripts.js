@@ -29,12 +29,17 @@ function addToCart(cookie) {
    //add 1 to the itemCount variable
    //add the correct price to the currentPrice variable
 
+
+   
+
 }
 
 function checkout() {
     console.log('User is checking out.')
-    console.log('You are purchasing ' , itemCount, ' items! Your total costs is ', currentPrice , 'dollars!'  )
+    window.alert('You are purchasing ' + itemCount + ' items! Your total costs is ' + currentPrice + ' dollars!'  )
 
     //Let your customer know how many items they are purchasing and the price
     
 }
+
+
