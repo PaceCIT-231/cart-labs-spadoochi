@@ -28,7 +28,9 @@ function addToCart(cookie) {
    }
    //add 1 to the itemCount variable
    //add the correct price to the currentPrice variable
+   (document.getElementById("cartItems")).innerHTML = itemCount;
 
+   (document.querySelector(".hoverText")).innerHTML = currentPrice;
 }
 
 function checkout() {
