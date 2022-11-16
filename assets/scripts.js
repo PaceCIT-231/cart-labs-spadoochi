@@ -28,15 +28,26 @@ function addToCart(cookie) {
    }
    //add 1 to the itemCount variable
    //add the correct price to the currentPrice variable
-   (document.getElementById("cartItems")).innerHTML = itemCount;
+   document.getElementById("cartItems").innerHTML = itemCount;
 
-   (document.querySelector(".hoverText")).innerHTML = currentPrice;
+   document.querySelector(".hoverText").innerHTML = currentPrice;
 }
 
 function checkout() {
     console.log('User is checking out.')
-    console.log('You are purchasing ' , itemCount, ' items! Your total costs is ', currentPrice , 'dollars!'  )
-
-    //Let your customer know how many items they are purchasing and the price
+    window.prompt('You are purchasing ' + itemCount + ' items! Your total costs is ' + currentPrice + ' dollars! \n What is your Name and Address so we can ship to you?')
     
+    //Let your customer know how many items they are purchasing and the price
+    itemCount = 0
+    currentPrice = 0
+    document.getElementById("cartItems").innerHTML = itemCount;
+    document.querySelector(".hoverText").innerHTML = currentPrice;
 }
+
+function darkMode() {
+document.querySelector("body").style.color = "white"
+document.querySelector("body").style.backgroundColor = "black"
+
+
+}
+    
