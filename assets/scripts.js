@@ -28,10 +28,7 @@ function addToCart(cookie) {
    }
    //add 1 to the itemCount variable
    //add the correct price to the currentPrice variable
-
-
-   
-
+  
 }
 
 function checkout() {
@@ -41,5 +38,3 @@ function checkout() {
     //Let your customer know how many items they are purchasing and the price
     
 }
-
-
