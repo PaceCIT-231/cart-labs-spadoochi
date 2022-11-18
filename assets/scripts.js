@@ -10,6 +10,7 @@ function addToCart(cookie) {
     */
    console.log('The user is adding this type of cookie to their cart: ' , cookie) 
    itemCount++
+   console.log('Your item count is ' + itemCount)
    
    if (cookie == "peanut butter") {
     currentPrice = 20 + currentPrice
@@ -26,6 +27,9 @@ function addToCart(cookie) {
    else if(cookie == "chocolate chip") {
     currentPrice = 25 + currentPrice
    }
+   
+   console.log('Your current price is $' + currentPrice)
+
    //add 1 to the itemCount variable
    //add the correct price to the currentPrice variable
   
